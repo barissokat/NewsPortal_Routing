@@ -19,11 +19,20 @@ namespace NewsPortal_Routing
                 defaults: new { controller = "Website", action = "HomePage" }
             );
 
-            routes.MapRoute(
-                name: "Category",
-                url: "category/{category}",
-                defaults: new { controller = "NewsCategory", action = "HomePage" }
-            );
+            int subcategoryBranchingNumber = 3;
+            string categoryUrl = "category";
+
+
+            for (int i = 0; i < subcategoryBranchingNumber; i++)
+            {
+                categoryUrl += "/{category" + i + "}";
+
+                routes.MapRoute(
+                    name: "Kategori " + i,
+                    url: categoryUrl,
+                    defaults: new { controller = "NewsCategory", action = "HomePage" }
+                );
+            }
         }
     }
 }

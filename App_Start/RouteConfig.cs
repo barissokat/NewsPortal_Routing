@@ -21,16 +21,24 @@ namespace NewsPortal_Routing
 
             int subcategoryBranchingNumber = 3;
             string categoryUrl = "category";
-
+            string newsUrl = "news";
 
             for (int i = 0; i < subcategoryBranchingNumber; i++)
             {
                 categoryUrl += "/{category" + i + "}";
 
                 routes.MapRoute(
-                    name: "Kategori " + i,
+                    name: "Category " + i,
                     url: categoryUrl,
                     defaults: new { controller = "NewsCategory", action = "HomePage" }
+                );
+
+                newsUrl += "/{category" + i + "}";
+
+                routes.MapRoute(
+                    name: "News " + i,
+                    url: newsUrl + "/{news}",
+                    defaults: new { controller = "News", action = "Details" }
                 );
             }
         }

@@ -12,5 +12,9 @@ namespace NewsPortal_Routing.App_Start
         {
             return View();
         }
+        public ActionResult Archive()
+        {
+            return View();
+        }
     }
 }

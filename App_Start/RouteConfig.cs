@@ -41,6 +41,12 @@ namespace NewsPortal_Routing
                     defaults: new { controller = "News", action = "Details" }
                 );
             }
+
+            routes.MapRoute(
+               name: "Archive",
+               url: "archive",
+               defaults: new { controller = "Website", action = "Archive" }
+           );
         }
     }
 }

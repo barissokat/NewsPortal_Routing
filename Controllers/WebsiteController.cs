@@ -16,5 +16,10 @@ namespace NewsPortal_Routing.App_Start
         {
             return View();
         }
+        public ActionResult ArchiveDate(string date)
+        {
+            ViewBag.ArchiveDate = date.Replace("-", "."); ;
+            return View();
+        }
     }
 }

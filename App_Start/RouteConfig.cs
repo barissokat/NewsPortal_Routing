@@ -18,6 +18,12 @@ namespace NewsPortal_Routing
                 url: "home",
                 defaults: new { controller = "Website", action = "HomePage" }
             );
+
+            routes.MapRoute(
+                name: "Category",
+                url: "category/{category}",
+                defaults: new { controller = "NewsCategory", action = "HomePage" }
+            );
         }
     }
 }

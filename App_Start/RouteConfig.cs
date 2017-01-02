@@ -22,7 +22,7 @@ namespace NewsPortal_Routing
             int subcategoryBranchingNumber = 3;
             string categoryUrl = "category";
             string newsUrl = "news";
-            string archiveUrl = "archive/category";
+            string archiveUrl = "archive";
             string dateCategoryUrl = "/{date}";
 
             for (int i = 0; i < subcategoryBranchingNumber; i++)
@@ -47,8 +47,14 @@ namespace NewsPortal_Routing
 
                 routes.MapRoute(
                     name: "Archive Category " + i,
-                    url: archiveUrl + dateCategoryUrl,
+                    url: archiveUrl + "/kategori" + dateCategoryUrl,
                     defaults: new { controller = "NewsCategory", action = "Archive"}    
+                );
+
+                routes.MapRoute(
+                    name: "Archive Category News " + i,
+                    url: archiveUrl + "/news" + dateCategoryUrl + "/{news}",
+                    defaults: new { controller = "News", action = "Archive" }
                 );
             }
 

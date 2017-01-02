@@ -201,6 +201,7 @@
     <Content Include="Views\Website\Archive.cshtml" />
     <Content Include="Views\Website\ArchiveDate.cshtml" />
     <Content Include="Views\NewsCategory\Archive.cshtml" />
+    <Content Include="Views\News\Archive.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

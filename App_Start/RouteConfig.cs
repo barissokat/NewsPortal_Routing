@@ -47,14 +47,16 @@ namespace NewsPortal_Routing
 
                 routes.MapRoute(
                     name: "Archive Category " + i,
-                    url: archiveUrl + "/kategori" + dateCategoryUrl,
-                    defaults: new { controller = "NewsCategory", action = "Archive"}    
+                    url: archiveUrl + "/category" + dateCategoryUrl,
+                    defaults: new { controller = "NewsCategory", action = "Archive" },
+                    constraints: new { date = @"\d{2}-\d{2}-\d{4}" }
                 );
 
                 routes.MapRoute(
                     name: "Archive Category News " + i,
                     url: archiveUrl + "/news" + dateCategoryUrl + "/{news}",
-                    defaults: new { controller = "News", action = "Archive" }
+                    defaults: new { controller = "News", action = "Archive" },
+                    constraints: new { date = @"\d{2}-\d{2}-\d{4}" }
                 );
             }
 
@@ -67,7 +69,8 @@ namespace NewsPortal_Routing
             routes.MapRoute(
                 name: "ArchiveDate",
                 url: "archive/{date}",
-                defaults: new { controller = "Website", action = "ArchiveDate" }
+                defaults: new { controller = "Website", action = "ArchiveDate" },
+                constraints: new { date = @"\d{2}-\d{2}-\d{4}" }
             );
         }
     }

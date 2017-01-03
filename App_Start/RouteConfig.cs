@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NewsPortal_Routing.RouteConstraints;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -32,7 +33,8 @@ namespace NewsPortal_Routing
                 routes.MapRoute(
                     name: "Category " + i,
                     url: categoryUrl,
-                    defaults: new { controller = "NewsCategory", action = "HomePage" }
+                    defaults: new { controller = "NewsCategory", action = "HomePage" },
+                    constraints: new { category = new CategoryRouteConstraints() }
                 );
 
                 newsUrl += "/{category" + i + "}";

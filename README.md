@@ -51,3 +51,27 @@ Haber sayfalarına aşağıdaki ekran görüntüsünde bulunan link ile ulaşıl
 ![alt tag](https://github.com/bsokat/NewsPortal_Routing/blob/master/Source/News1.png)
 
 > Kategori sayfalarında olduğu gibi route kısıtlamalarında bulunmayan kategoriler girildiğinde ya da kırılım sayısı tanımlanan kırılım sayısını geçtiği zaman, istenilen sayfalar gösterilemeyecektir.
+
+#### Arşiv Anasayfasına Özel Route
+
+Tek bir sayfa olarak düşünülmüştür. Hangi tarihteki haberlere erişilmek istendiği bilgisinin seçildiği controller bulunmaktadır ve sayfa sabit olduğundan route ayarlarında doğrudan link tanımlanmıştır.
+
+Arşiv anasayfasına aşağıdaki ekran görüntüsünde bulunan link ile ulaşılabilir.
+
+![alt tag](https://github.com/bsokat/NewsPortal_Routing/blob/master/Source/Archive1.png)
+
+#### Tarihe Özel Anasayfasına Özel Route
+
+Sitenin kullanıma başlamasından itibaren yayınlanan tüm haberlerin, veritabanında saklanıldığı düşünülmüştür. Bu sayede kullanıcı istediği tarihteki haberlere kolaylıkla ulaşabilmektedir. Bunu gerçekleştirebilmek için tarih bilgisi parametre olarak alınması gerekmektedir. Ayrıca sayfa arşiv sayfası olduğu için **archive** başlamaktadır ve yanına tarih almaktadır.
+
+Tarihe özel arşiv anasayfasına aşağıdaki ekran görüntüsünde bulunan link ile ulaşılabilir.
+
+![alt tag](https://github.com/bsokat/NewsPortal_Routing/blob/master/Source/ArchiveDate1.png)
+
+Ayrıca route kısıtlaması ile farklı format ile tarihin girilmesi önlenmiştir.
+
+![alt tag](https://github.com/bsokat/NewsPortal_Routing/blob/master/Source/ArchiveDate2.png)
+
+Tarihin atlanılarak sadece kategori arşivleme gerçekleştirilmek istendiği zaman yine route kısıtlaması ile bu işlem engellenmiştir.
+
+![alt tag](https://github.com/bsokat/NewsPortal_Routing/blob/master/Source/ArchiveDate3.png)

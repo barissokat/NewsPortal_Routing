@@ -12,7 +12,7 @@ namespace NewsPortal_Routing.RouteConstraints
         {
             int routePlace = values.Count() - 3;
             string categoryName = values["category" + routePlace].ToString();
-            List<string> categories = new List<string> { "Money", "Tech", "Sport", "Travel" };
+            List<string> categories = new List<string> { "Money", "Tech", "Sport", "Basketball", "KSK" };
             if (categories.Contains(categoryName))
                 return true;
             else

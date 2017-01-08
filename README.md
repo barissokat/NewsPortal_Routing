@@ -34,6 +34,10 @@ Bir altkategorisi bulunan kategori sayfanın linki,
 
 ![alt tag](https://github.com/bsokat/NewsPortal_Routing/blob/master/Source/Category3.png)
 
-Rota kısıtlaması ile kategori listesi dışında bir kategori sayfasına ulaşılmaya çalışıldığı zaman alttaki ekran görüntüsündeki gibi sayfaya ulaşılmamaktadır.
+Kırılım sayısı aşağıdaki ekran görüntüsünde olduğu gibi 3'ü geçtiği için, yani 4 olduğu için istenilen kategori sayfasına ulaşılamamaktadır.
 
 ![alt tag](https://github.com/bsokat/NewsPortal_Routing/blob/master/Source/Category4.png)
+
+Rota kısıtlaması ile kategori listesi dışında bir kategori sayfasına ulaşılmaya çalışıldığı zaman alttaki ekran görüntüsündeki gibi sayfaya ulaşılmamaktadır.
+
+![alt tag](https://github.com/bsokat/NewsPortal_Routing/blob/master/Source/Category5.png)

@@ -15,3 +15,25 @@ Tek bir sayfa olarak düşünülmüştür. Sadece içeriği değişip, sayfa sab
 Anasayfa'ya aşağıdaki ekran görüntüsünde bulunan link ile ulaşılabilir.
 
 ![alt tag](https://github.com/bsokat/NewsPortal_Routing/blob/master/Source/HomePage1.png)
+
+#### Anasayfa'ya Özel Route
+
+Site içerisinde bir çok kategori ve bu kategorilerin alt kategorileri olacağı düşünülmüştür. Linkin kategori sayfasına yönleneceğinin belirtilmesi için link **category** ismiyle başlamaktadır. Sitedeki kategorilerin en yüksek kırılım sayısı veritabanından sorgulanıp öğrenildikten sonra route tanımlaması dinamik olarak yapılmalıdır. Ancak bu projede veritabanı bulunmadığı için kırılım sayısı rastgele olarak 3 seçilmiştir. Yani bir kategorinin kendisiyle hariç en fazla 2 tane alt kategorisi bulunmaktadır. Bir kategori sayfası açıldığında o sayfada, açılan kategoriye sahip tüm haberler listelenecektir.
+
+Kategori sayfalarına aşağıdaki ekran görüntüsünde bulunan linkler ile ulaşılabilir.
+
+Altkategorisi bulunmayan kategori sayfanın linki,
+
+![alt tag](https://github.com/bsokat/NewsPortal_Routing/blob/master/Source/Category1.png)
+
+Bir altkategorisi bulunan kategori sayfanın linki,
+
+![alt tag](https://github.com/bsokat/NewsPortal_Routing/blob/master/Source/Category2.png)
+
+İki altkategorisi bulunan kategori sayfanın linki,
+
+![alt tag](https://github.com/bsokat/NewsPortal_Routing/blob/master/Source/Category3.png)
+
+Rota kısıtlaması ile kategori listesi dışında bir kategori sayfasına ulaşılmaya çalışıldığı zaman alttaki ekran görüntüsündeki gibi sayfaya ulaşılmamaktadır.
+
+![alt tag](https://github.com/bsokat/NewsPortal_Routing/blob/master/Source/Category4.png)

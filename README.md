@@ -60,7 +60,7 @@ Arşiv anasayfasına aşağıdaki ekran görüntüsünde bulunan link ile ulaş�
 
 ![alt tag](https://github.com/bsokat/NewsPortal_Routing/blob/master/Source/Archive1.png)
 
-#### Tarihe Özel Anasayfasına Özel Route
+#### Tarihe Göre Arşiv Anasayfasına Özel Route
 
 Sitenin kullanıma başlamasından itibaren yayınlanan tüm haberlerin, veritabanında saklanıldığı düşünülmüştür. Bu sayede kullanıcı istediği tarihteki haberlere kolaylıkla ulaşabilmektedir. Bunu gerçekleştirebilmek için tarih bilgisi parametre olarak alınması gerekmektedir. Ayrıca sayfa arşiv sayfası olduğu için **archive** başlamaktadır ve yanına tarih almaktadır.
 
@@ -75,3 +75,13 @@ Ayrıca route kısıtlaması ile farklı format ile tarihin girilmesi önlenmiş
 Tarihin atlanılarak sadece kategori arşivleme gerçekleştirilmek istendiği zaman yine route kısıtlaması ile bu işlem engellenmiştir.
 
 ![alt tag](https://github.com/bsokat/NewsPortal_Routing/blob/master/Source/ArchiveDate3.png)
+
+#### Tarihe Göre Kategorilerin Arşiv Sayfasına Özel Route
+
+Arşiv sayfasında belirtilen tarihte bir çok kategori ve kategoriye ait haberler bulunduğu düşünülmüştür. Kategoriler daha önceki sayfalarda olduğu gibi alt kategorilerden oluşabilir. Bu sebeple kategori isimleri dinamik alınacak şekilde kurgulanmıştır.
+
+Tarihe göre kategori sayfasına aşağıdaki ekran görüntüsünde bulunan link ile ulaşılabilir.
+
+![alt tag](https://github.com/bsokat/NewsPortal_Routing/blob/master/Source/ArchiveCategoryDate1.png)
+
+> Önceki bölümlerde olduğu gibi tarih formatındaki farklılıklar, tarih yerine başka bir girdinin yazılması veya kategori kırılım sayısının aşılması nedeniyle istenilen sayfaların görüntülenmesi route kısıtlamaları ile engellenmiştir.

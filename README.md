@@ -78,10 +78,20 @@ Tarihin atlanılarak sadece kategori arşivleme gerçekleştirilmek istendiği z
 
 #### Tarihe Göre Kategorilerin Arşiv Sayfasına Özel Route
 
-Arşiv sayfasında belirtilen tarihte bir çok kategori ve kategoriye ait haberler bulunduğu düşünülmüştür. Kategoriler daha önceki sayfalarda olduğu gibi alt kategorilerden oluşabilir. Bu sebeple kategori isimleri dinamik alınacak şekilde kurgulanmıştır.
+Arşiv sayfasında belirtilen tarihte bir çok kategori ve kategoriye ait haberler bulunduğu düşünülmüştür. Kategoriler daha önceki sayfalarda olduğu gibi alt kategorilerden oluşabilir. Bu sebeple kategori isimleri dinamik alınacak şekilde kurgulanmıştır. Link arşiv sayfasına yönleneceği için **archive** ismiyle başlayacaktır.
 
 Tarihe göre kategori sayfasına aşağıdaki ekran görüntüsünde bulunan link ile ulaşılabilir.
 
 ![alt tag](https://github.com/bsokat/NewsPortal_Routing/blob/master/Source/ArchiveCategoryDate1.png)
+
+> Önceki bölümlerde olduğu gibi tarih formatındaki farklılıklar, tarih yerine başka bir girdinin yazılması veya kategori kırılım sayısının aşılması nedeniyle istenilen sayfaların görüntülenmesi route kısıtlamaları ile engellenmiştir.
+
+#### Tarihe Göre Haberin Arşiv Sayfasına Özel Route
+
+Arşiv içinde belirtilen tarihte bir çok haber bulunmakta, ancak her haber sadece bir kategori altında bulunacağı düşünülmüştür. Bu nedenle linkte tarih ve haber adının yanında kategoriside belirtilebilineceği düşünülmüştür. Link arşiv sayfasına yönleneceği için **archive** ismiyle başlayacaktır.
+
+Tarihe göre haberin sayfasına aşağıdaki ekran görüntüsünde bulunan link ile ulaşılabilir.
+
+![alt tag](https://github.com/bsokat/NewsPortal_Routing/blob/master/Source/ArchiveNewsDate1.png)
 
 > Önceki bölümlerde olduğu gibi tarih formatındaki farklılıklar, tarih yerine başka bir girdinin yazılması veya kategori kırılım sayısının aşılması nedeniyle istenilen sayfaların görüntülenmesi route kısıtlamaları ile engellenmiştir.

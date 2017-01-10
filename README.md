@@ -6,6 +6,26 @@
 
 Bu projede **yönlendirme** konusu kavranabilmesi için, haber sitesi baz alınıp, bu sitede bulunabilecek sayfalara göre yönlendirmeler tanımlanmıştır. Bu haber sitesinde, kategori, haber ve arşiv sayfaları için yönlendirmeler yapılmıştır.
 
+## Eklenen veya Güncellenen Dosyalar
+
+- App_Start
+	1. RouteConfig.cs
+- Controller 
+	1. ProductApiController.cs
+	2. ProductController.cs
+	3. TeacherApiController.cs
+	4. TeacherController.cs
+- Filters
+	1. LogAttribute.cs
+- Models
+	1. Lesson.cs
+	2. Product.cs
+- Views
+	1. Product
+		- Index.cshtml
+	2. Teacher
+		- Lessons.cshtml
+
 ## Yönlendirmelerin Test Edilmesi
 
 #### Anasayfa'ya Özel Route
